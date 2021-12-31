@@ -23,9 +23,6 @@ vec4 position(mat4 transformProjection, vec4 vertexPosition) {
     // calculate the positions of the transformed coordinates on the screen
     // save each step of the process, as these are often useful when writing custom fragment shaders
     worldPosition = modelMatrix * vertexPosition;
-    worldPosition.x += modelMatrix[0].w;
-    worldPosition.y += modelMatrix[1].w;
-    worldPosition.z += modelMatrix[2].w;
     viewPosition = viewMatrix * worldPosition;
     screenPosition = projectionMatrix * viewPosition;
 

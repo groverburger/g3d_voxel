@@ -1,4 +1,4 @@
-GameScene = class()
+GameScene = Object:extend()
 local size
 local threadpool = {}
 -- load up some threads so that chunk meshing won't block the main thread

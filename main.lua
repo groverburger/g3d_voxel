@@ -4,7 +4,7 @@ io.stdout:setvbuf "no"
 
 g3d = require "lib/g3d"
 lume = require "lib/lume"
-class = require "lib/oops"
+Object = require "lib/classic"
 scene = require "lib/scene"
 
 require "things/chunk"

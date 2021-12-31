@@ -1,7 +1,7 @@
 local size = 16
 local ffi = require "ffi"
 
-Chunk = class()
+Chunk = Object:extend()
 Chunk.size = size
 
 function Chunk:new(x,y,z)
